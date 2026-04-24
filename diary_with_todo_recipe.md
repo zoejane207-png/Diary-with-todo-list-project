@@ -60,7 +60,7 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
     │                       │     │                                             │      
     │  Methods:             │     │                                             │      
     │    - Mark as complete │     │   Methods:                                  │      
-    │                       │     │    - Word Count                             │      
+    │    - Format           │     │    - Word Count                             │      
     │                       │     │    - Reading time                           │      
     │                       │     │    - Check_for_mobile_number                │      
     │                       │     │                                             │      
@@ -204,6 +204,14 @@ class Todo:
         #   
         # Side-effects:
         #   Sets the task and completed properties
+        pass # No code here yet
+
+    def format_task(self):
+        # Parameters:
+        #   
+        # returns formatted string:
+        # Title:
+        # Content
         pass # No code here yet
 
     def mark_completed(self):
