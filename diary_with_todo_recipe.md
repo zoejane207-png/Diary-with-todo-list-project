@@ -55,7 +55,7 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
     │                       │     │                                             │      
     │  Public Properties:   │     │   Public Properties:                        │      
     │    - Task name        │     │    - Title                                  │      
-    │    - Complete status  │     │    - Content                                │      
+    │    - Complete status  │     │    - contents                                │      
     │                       │     │    - Includes_mobile : Boolean              │      
     │                       │     │                                             │      
     │  Methods:             │     │                                             │      
@@ -94,9 +94,9 @@ class Diary:
         # Parameters:
         #   keyword: Instance of DiaryEntry
         # Returns:
-        #   A formatted string of the Diary title and contents:
+        #   A formatted string of the Diary title and contentss:
         #    Title:
-        #    Contents
+        #    contentss
         pass # No code here yet
 
     def count_words(self):
@@ -163,20 +163,20 @@ class Diary:
 class DiaryEntry:
     # User-facing properties:
     #   title: string
-    #   content: string
+    #   contents: string
 
-    def __init__(self, title, content):
+    def __init__(self, title, contents):
         # Parameters:
         #   title: string
-        #   content: string
+        #   contents: string
         #   includes_mobile_number: boolean set to False to begin with
         # Side-effects:
-        #   Sets the title, content and includes_mobile_number properties
+        #   Sets the title, contents and includes_mobile_number properties
         pass # No code here yet
 
     def word_count(self):
         # Returns:
-        #   Int: representing the number of words in the entry content
+        #   Int: representing the number of words in the entry contents
         pass # No code here yet
 
 def reading_time(self, wpm):
@@ -195,7 +195,7 @@ def check_for_mobile_number(self):
 class Todo:
     # User-facing properties:
     #   title: string
-    #   content: string
+    #   contents: string
 
     def __init__(self, task):
         # Parameters:
@@ -211,7 +211,7 @@ class Todo:
         #   
         # returns formatted string:
         # Title:
-        # Content
+        # contents
         pass # No code here yet
 
     def mark_completed(self):
@@ -255,12 +255,12 @@ a more granular level of detail._
 # EXAMPLE
 
 """
-Given an entry with a title and content
-We see the title and content reflected in the title and content properties
+Given an entry with a title and contents
+We see the title and contents reflected in the title and contents properties
 """
 entry_1 = DiaryEntry("Day One", "Today was a good day!")
 entry_1.title # => "Day One"
-entry_1.content # => "Today was a good day!"
+entry_1.contents # => "Today was a good day!"
 ```
 
 _Encode each example as a test. You can add to the above list as you go._

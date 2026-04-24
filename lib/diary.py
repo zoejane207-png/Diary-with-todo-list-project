@@ -9,6 +9,9 @@ class Diary:
 
     def add_entry(self, entry):
         self.entries_list.append(entry)
+        if entry.check_for_mobile_number() == True:
+            pass
+        
 
     def read(self, entry):
         return entry.format_task()
